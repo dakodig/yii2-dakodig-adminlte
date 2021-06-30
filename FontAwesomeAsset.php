@@ -7,19 +7,12 @@ use yii\web\AssetBundle as BaseAdminLteAsset;
 /**
  * This is just an example.
  */
-class AdminLteAsset extends BaseAdminLteAsset {
+class FontAwesomeAsset extends BaseAdminLteAsset {
 
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/dist';
+    public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins/fontawesome-free';
     public $css = [
-        'css/adminlte.min.css',
+        'css/all.min.css',
     ];
-    public $js = [
-        'js/adminlte.min.js'
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
-        'yii\bootstrap4\BootstrapPluginAsset',
-    ];
+    
 
 }
